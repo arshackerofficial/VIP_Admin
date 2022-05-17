@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/Mainlogoimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/logo"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/Mainhellotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/Mainlogoimg"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Hello, Armin!"
+        android:layout_margin="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mainhellotext"
+        android:gravity="center"
+        android:id="@+id/MainbtnLayout">
+
+    <soup.neumorphism.NeumorphButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Key"
+        style="@style/Widget.Neumorph.Button"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/MainaddkeyBtn"
+        android:layout_marginEnd="20sp"
+        android:textColor="@color/black"/>
+
+    <soup.neumorphism.NeumorphButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Days"
+        style="@style/Widget.Neumorph.Button"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/MainadddaysBtn"
+        android:layout_marginEnd="20sp"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainbtnLayout"
+        android:gravity="center"
+        android:id="@+id/MainbtnLayout2">
+
+        <soup.neumorphism.NeumorphButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Key"
+            style="@style/Widget.Neumorph.Button"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/MainresetKeyBtn"
+            android:layout_marginEnd="20sp"
+            android:textColor="@color/black"/>
+
+        <soup.neumorphism.NeumorphButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset All"
+            style="@style/Widget.Neumorph.Button"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/MainresetAllBtn"
+            android:layout_marginEnd="20sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainbtnLayout2"
+        android:gravity="center"
+        android:id="@+id/MainbtnLayout3">
+
+        <soup.neumorphism.NeumorphButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Data"
+            style="@style/Widget.Neumorph.Button"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/MainuploadBtn"
+            android:layout_marginEnd="20sp"
+            android:textColor="@color/black"/>
+
+        <soup.neumorphism.NeumorphButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Key"
+            style="@style/Widget.Neumorph.Button"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/MaindeleteKeyBtn"
+            android:layout_marginEnd="20sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainbtnLayout3"
+        android:layout_margin="20dp"
+        android:id="@+id/MainkeysCardView">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Total Active Keys:"
+            android:textSize="16sp"
+            android:layout_margin="20dp"
+            android:id="@+id/MainactiveKeysText"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainviewKeys"
+        android:layout_below="@id/MainkeysCardView"
+        style="@style/Widget.Neumorph.CardView">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Click Here To View Keys"
+            android:textSize="16sp"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+</RelativeLayout>

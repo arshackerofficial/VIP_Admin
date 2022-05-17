@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="center"
+    tools:context=".UploadActivity">
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/Uploadlogoimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/Uploadtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Uploadlogoimg"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Upload Here!"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/black"/>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/UploadCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Uploadtext"
+        android:layout_margin="20dp">
+
+        <Spinner
+            android:id="@+id/UploadSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:entries="@array/uploadTypes"
+            android:fontFamily="monospace"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UploadCardView"
+        android:layout_centerHorizontal="true"
+        android:text="Upload"
+        android:id="@+id/Uploadbtn"
+        style="@style/Widget.Neumorph.Button"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>

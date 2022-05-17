@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="uploadTypes">
+        <item>Mod 1</item>
+        <item>Mod 2</item>
+        <item>Mod 3</item>
+        <item>Mod Paks</item>
+        <item>Mod Data</item>
+    </string-array>
+</resources>

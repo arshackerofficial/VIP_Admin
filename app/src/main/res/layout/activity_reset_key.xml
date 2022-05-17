@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="center"
+    tools:context=".ResetKeyActivity">
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/ResetKeylogoimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/ResetKeytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetKeylogoimg"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Reset Key!"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/black"/>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/ResetKeyCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetKeytext"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/ResetKeyET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#00000000"
+            android:fontFamily="monospace"
+            android:hint="Key"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetKeyCardView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ResetKeybtn"
+        android:text="Reset"
+        style="@style/Widget.Neumorph.Button"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
